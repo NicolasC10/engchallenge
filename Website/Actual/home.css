@@ -17,10 +17,10 @@
     font-size: 17px;
 }
 
-    .navbar a:hover {
-        background: #9bb5da;
-        color: white;
-    }
+.navbar a:hover {
+    background: #9bb5da;
+    color: white;
+}
 /*site font*/
 html {
     font-family: "Arial Bold", sans-serif;
