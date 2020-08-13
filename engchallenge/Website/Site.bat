@@ -1,2 +1,0 @@
-.\Actual\home.html
-exit
