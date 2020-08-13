@@ -7,20 +7,20 @@
     width: 100%;
 }
 
-    .navbar a {
-        float: left;
-        display: block;
-        color: #323232;
-        text-align: center;
-        padding: 25px 16px;
-        text-decoration: none;
-        font-size: 17px;
-    }
+.navbar a {
+    float: left;
+    display: block;
+    color: #323232;
+    text-align: center;
+    padding: 25px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
 
-        .navbar a:hover {
-            background: #9bb5da;
-            color: white;
-        }
+.navbar a:hover {
+    background: #9bb5da;
+    color: white;
+}
 /*site font*/
 html {
     font-family: "Arial Bold", sans-serif;
@@ -52,4 +52,15 @@ footer {
     color: white;
     padding: 5px;
     margin: 5px;
+}
+.main {
+    margin-top: 125px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/*h1 {
+    font-size: ;
+}*/
+p {
+    text-indent: 50px;
 }
