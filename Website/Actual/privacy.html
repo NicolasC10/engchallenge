@@ -1,0 +1,227 @@
+<!DOCTYPE html
+          PUBLIC "-//W3C//DTD HTML 4.01//EN"
+          "http://www.w3.org/TR/html4/strict.dtd">
+<style>
+    /*navbar styles*/
+    .navbar {
+        overflow: hidden;
+        background-color: #fff9c5;
+        /*position: fixed;*/
+        top: 0;
+        width: 100%;
+    }
+    .navbar a {
+        float: left;
+        display: block;
+        color: #323232;
+        text-align: center;
+        padding: 25px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .navbar a:hover {
+        background: #9bb5da;
+        color: white;
+    }
+    /*site font*/
+    html {
+        font-family: "Arial Bold", sans-serif;
+    }
+    img {
+        float: left;
+        width: auto;
+        height: auto;
+    }
+    /* Add a background color when the inputs get focus */
+    input[type=text]:focus, input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+    }
+    /* Set a style for all buttons */
+    button {
+        background-color: #323232;
+        color: white;
+        padding: 14px 20px;
+        margin-top: 150px;
+        margin-left: 40%;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+
+    }
+    button:hover {
+        background-color: #9bb5da;
+        color: black;
+    }
+    /* Add padding to container elements */
+    .container {
+        padding: 16px;
+    }
+    /* The Modal (background) */
+    .modal1, .modal2 {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: #474e5d;
+        padding-top: 50px;
+    }
+    /* Modal Content/Box */
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+    }
+    /* Style the horizontal ruler */
+    hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+    }
+    /* The Close Button (x) */
+    .close {
+        position: absolute;
+        right: 35px;
+        top: 15px;
+        font-size: 40px;
+        font-weight: bold;
+        color: #f1f1f1;
+    }
+    .close:hover,
+    .close:focus {
+        color: #f44336;
+        cursor: pointer;
+    }
+    /* Clear floats */
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .column {
+        float: left;
+        width: 50%;
+    }
+    .row::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    footer {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        text-align: center;
+        background-color: #323232;
+        color: white;
+        padding: 5px;
+        margin: 5px;
+    }
+    h1 {
+        margin-top: 75px;
+        text-align: center;
+    }
+</style>
+<html lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://www.w3.org/2005/10/profile">
+    <meta charset="utf-8" />
+    <title>FLIKR - Red Velvet Inc.</title>
+    <! favicon not working>
+    <link rel='icon' type='image/x-icon' href='flikrfavi.ico'>
+</head>
+
+<body>
+    <div class="navbar" id="topofpage">
+        <img src="flikrlogo.jpg" />
+        <a href="./home.html">Home</a>
+        <a href="./product.html">Our Product and Research</a>
+        <a href="./privacy.html">Privacy and Feedback</a>
+        <a href="./market.html">Marketing Forecast</a>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h1>
+                Our Privacy Policy
+            </h1>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Read Our Privacy Policy</button>
+        </div>
+        <div class="column">
+            <h1>
+                Improvement and Feedback Plan
+            </h1>
+            <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Read Our Feedback Plan</button>
+        </div>
+    </div>
+
+    <div id="id01" class="modal1">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content" action="/action_page.php">
+            <div class="container">
+                <h1>Privacy Policy</h1>
+                <hr />
+                <h2>Header 1</h2>
+                <p>some text</p>
+                <h2>Header 2</h2>
+                <p>some text</p>
+                <h2>Header 3</h2>
+                <p>some text</p>
+                <h2>Header 4</h2>
+                <p>some text</p>
+                <h2>Header 5</h2>
+                <p>some text</p>
+            </div>
+        </form>
+    </div>
+
+    <div id="id02" class="modal2">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content" action="/action_page.php">
+            <div class="container">
+                <h1>Feedback Plan</h1>
+                <hr />
+                <h2>Header 1</h2>
+                <p>some text</p>
+                <h2>Header 2</h2>
+                <p>some text</p>
+                <h2>Header 3</h2>
+                <p>some text</p>
+                <h2>Header 4</h2>
+                <p>some text</p>
+                <h2>Header 5</h2>
+                <p>some text</p>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        Copyright GitHub NicolasC10 2020 (MIT License)
+        <br />
+        FLIKR is a Registered Trademark of Red Velvet Inc. 2020
+        <br />
+        iPhone 11 Pro Max and iOS are Registered Trademarks of Apple Inc.
+    </footer>
+
+    <script>
+        // Get the modal
+        var modal1 = document.getElementById('id01');
+        var modal2 = document.getElementById('id02');
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal1) {
+                modal1.style.display = "none";
+            }
+        }
+        window.onclick = function (event) {
+            if (event.target == modal2) {
+                modal1.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html
+      PUBLIC "-//W3C//DTD HTML 4.01//EN"
+      "http://www.w3.org/TR/html4/strict.dtd">
+<style>
+    /*navbar style*/
+    .navbar {
+        overflow: hidden;
+        background-color: #fff9c5;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .navbar a {
+        float: left;
+        display: block;
+        color: #323232;
+        text-align: center;
+        padding: 25px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .navbar a:hover {
+        background: #9bb5da;
+        color: white;
+    }
+    /*site font*/
+    html {
+        font-family: "Arial Bold", sans-serif;
+    }
+    img {
+        float: left;
+        width: auto;
+        height: auto;
+    }
+    .mySlides {
+        margin-top: 51px; 
+        height: 20%;
+    }
+    .columnx3 {
+        float: left;
+        width: 33.33%;
+    }
+    .columnx2 {
+        float: left;
+        width: 50%;
+    }
+    .row::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    footer {
+        width: 100%;
+        bottom: 0;
+        text-align: center;
+        background-color: #323232;
+        color: white;
+        padding: 5px;
+        margin: 5px;
+    }
+    h1 {
+        padding: 10px;
+        font-size: 50px;
+        text-align: center;
+    }
+    h2 {
+        padding: 10px;
+        font-size: 30px;
+        text-align: center;
+    }
+</style>
+<html lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://www.w3.org/2005/10/profile">
+    <meta charset="utf-8" />
+    <title>FLIKR - Red Velvet Inc.</title>
+    <! favicon not working>
+    <link rel='icon' type='image/x-icon' href='flikrfavi.ico'>
+</head>
+
+<body>
+    <div class="navbar" id="topofpage">
+        <img src="flikrlogo.jpg" />
+        <a href="./home.html">Home</a>
+        <a href="./product.html">Our Product and Research</a>
+        <a href="./privacy.html">Privacy and Feedback</a>
+        <a href="./market.html">Marketing Forecast</a>
+    </div>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides">
+            <div class="numbertext">1 / 3</div>
+            <img src="image1.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">2 / 3</div>
+            <img src="image2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">3 / 3</div>
+            <img src="image4.jpeg" style="width:100%">
+        </div>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <div class="row">
+        <div class="columnx3">
+            <img src="sc1.png" style="width:100%">
+        </div>
+        <div class="columnx3">
+            <h1>
+                Instant Access to Support and Resources?
+            </h1>
+                <br />
+            <h2>
+                What We're Built On.
+            </h2>
+        </div>
+        <div class="columnx3">
+            <img src="sc2.png" style="width:100%">
+        </div>
+        <div class="columnx2">
+            <img src="sc3.png" style="width:100%">
+        </div>
+        <div class="columnx2">
+            <h1>
+                By Students, <br />For Students
+            </h1>
+            <br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br />
+        </div>
+        <div class="columnx2">
+            <img src="image3.png" style="width:100%">
+
+        </div>
+        <div class="columnx2">
+            <h1>
+                Igniting the Conversation
+            </h1>
+        </div>
+    </div>
+
+
+
+    <footer>
+        Copyright GitHub NicolasC10 2020 (MIT License)
+        <br />
+        FLIKR is a Registered Trademark of Red Velvet Inc. 2020
+        <br />
+        iPhone 11 Pro Max and iOS are Registered Trademarks of Apple Inc.
+    </footer>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+    
+        function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+         dots[i].className = dots[i].className.replace(" active", "");
+        }
+         slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 4000); // Change image every 4 seconds
+        }
+    </script>
+
+</body>
+</html>
