@@ -15,5 +15,4 @@ Contents:
     (Privacy Policy and Feedback Plan are not implemented at the moment,
     Main information involving the product and research is also yet to be included), 
   Not all files in 'Website' are used, 
-  Website headers can be/are temporary and subject to change, 
-  Any suggestions/changes should be made via a group chat
+  Website headers can be/are temporary and subject to change
