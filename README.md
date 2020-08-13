@@ -7,5 +7,13 @@ Contents:
   Figma Design
 
 # website instructions:
-  Access the website via the 'Site' shortcut in the 'Website' folder (engchallenge/website)
+  Access the website via the 'Site' shortcut in the 'Website' folder (engchallenge/website),
   All required files to run the website are in 'Actual' (engchallenge/Website/Actual)
+
+#WIP:
+  Not all content on the website is finished and/or included 
+    (Privacy Policy and Feedback Plan are not implemented at the moment,
+    Main information involving the product and research is also yet to be included), 
+  Not all files in 'Website' are used, 
+  Website headers can be/are temporary and subject to change, 
+  Any suggestions/changes should be made via a group chat
