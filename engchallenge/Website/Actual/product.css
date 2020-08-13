@@ -1,0 +1,61 @@
+﻿/*navbar styles*/
+.navbar {
+    overflow: hidden;
+    background-color: #fff9c5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #323232;
+    text-align: center;
+    padding: 25px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background: #9bb5da;
+    color: white;
+}
+/*site font*/
+html {
+    font-family: "Arial Bold", sans-serif;
+}
+
+img {
+    float: left;
+    width: auto;
+    height: auto;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    margin-top: 75px;
+    float: left;
+    width: 33.33%;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    background-color: #323232;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html
+          PUBLIC "-//W3C//DTD HTML 4.01//EN"
+          "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://www.w3.org/2005/10/profile">
+    <meta charset="utf-8" />
+    <title>FLIKR - Red Velvet Inc.</title>
+    <! favicon not working>
+    <link rel='icon' type='image/x-icon' href='flikrfavi.ico'>
+    <link rel="stylesheet" href="privacy.css" />
+</head>
+
+<body>
+    <div class="navbar" id="topofpage">
+        <img src="flikrlogo.jpg" />
+        <a href="./home.html">Home</a>
+        <a href="./product.html">Our Product and Research</a>
+        <a href="./privacy.html">Privacy and Feedback</a>
+        <a href="./market.html">Marketing Forecast</a>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h1>
+                Our Privacy Policy
+            </h1>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Read Our Privacy Policy</button>
+        </div>
+        <div class="column">
+            <h1>
+                Improvement and Feedback Plan
+            </h1>
+            <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Read Our Feedback Plan</button>
+        </div>
+    </div>
+
+    <div id="id01" class="modal1">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content" action="/action_page.php">
+            <div class="container">
+                <h1>Privacy Policy</h1>
+                <hr />
+                <h2>Header 1</h2>
+                <p>some text</p>
+                <h2>Header 2</h2>
+                <p>some text</p>
+                <h2>Header 3</h2>
+                <p>some text</p>
+                <h2>Header 4</h2>
+                <p>some text</p>
+                <h2>Header 5</h2>
+                <p>some text</p>
+            </div>
+        </form>
+    </div>
+
+    <div id="id02" class="modal2">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content" action="/action_page.php">
+            <div class="container">
+                <h1>Feedback Plan</h1>
+                <hr />
+                <h2>Feedback Plan sec. i) Asking for Feedback</h2>
+                <p>
+                    A feedback survey database on the local device will contain about 20 possible questions and templates. At the end of each week (in a weekly reflection style), 3-4 of the database questions will be asked (or modified and asked) randomly towards the user to gather usability data and application or personal improvement data. Application improvement feedback questions will always be available to answer via Settings tab. By submitting the survey, the user consents to the data collection involved with the questions they answered. Data collection will be used to analyze the effectiveness of the app and further improve its usability and methods.
+                </p>
+                <h2>Feedback Plan sec. ii) Categorizing the Feedback</h2>
+                <p>
+                    Of the 20 questions, they will be categorized as either Personal Improvement, Application Feedback, or Application Request. All the questions will be associated with the unnamed user data for analytical purposes. The answers will be organized into a user-specific spreadsheet available to researchers or developers (ie. The developers will not have access to personal improvement answers)
+                </p>
+                <h2>Feedback Plan sec. iii) Acting on the Feedback</h2>
+                <p>
+                    Application Feedback and Application Request data will be implemented in regular update intervals, likely on a bi-weekly to monthly basis. Personal Improvement data will be used to improve the effectiveness of the application and further research and improve methods used. The Personal Improvement data will also be used to provide a custom approach to users after review of researchers and psychologists.
+                </p>
+                <h2>Feedback Plan sec. iv) Following Up on the Feedback</h2>
+                <p>
+                    Users will be thanked after filling out all feedback forms. In the case that users chose to fill out forms via Settings, they will be emailed or sent a personal notification with a reply based on the requests or feedback they sent. Personal replies can either thank the user and ask for related positive comments or inquire as to why the user said something negative and fix the issue in a professional and respectful way to improve the experience for others using the application.
+                </p>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        Copyright GitHub NicolasC10 2020 (MIT License)
+        <br />
+        FLIKR is a Registered Trademark of Red Velvet Inc. 2020
+        <br />
+        iPhone 11 Pro Max and iOS are Registered Trademarks of Apple Inc.
+    </footer>
+
+    <script>
+        // Get the modal
+        var modal1 = document.getElementById('id01');
+        var modal2 = document.getElementById('id02');
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal1) {
+                modal1.style.display = "none";
+            }
+        }
+        window.onclick = function (event) {
+            if (event.target == modal2) {
+                modal1.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
