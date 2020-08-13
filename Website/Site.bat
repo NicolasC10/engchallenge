@@ -1,2 +1,2 @@
 .\Actual\home.html
-@pause
+exit
